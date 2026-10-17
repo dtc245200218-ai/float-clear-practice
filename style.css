@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.left-column {
+  width: 60%;
+  float: left;
+  background-color: lightblue;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.right-column {
+  width: 38%;
+  float: right;
+  background-color: lightgreen;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+/* Xử lý float */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  clear: both;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: lightgray;
+  text-align: center;
+}
